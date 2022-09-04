@@ -43,7 +43,7 @@ async def getmsg(ctx):
     return message
 
 
-@client.event
+@bot.event
 async def on_message(message):
 
     if message.author == client.user:
