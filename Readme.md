@@ -1,3 +1,6 @@
+## Once this bot is running:
+Use by replying to a message in discord and including the text "!insult" in your message. (no quotation marks needed)
+
 ## To run locally
 
 - ```git clone ....```
