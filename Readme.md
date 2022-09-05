@@ -22,7 +22,7 @@
 - Go to 'Networking' and set up a firewall
 - - Inbound Rules: ALL TCP, ALL UDP
 - Attach firewall to your droplet
-- SSH into droplet, or use 'Droplet Terminal' via UI
+- SSH into droplet, or use 'Droplet Terminal' via UI (```ssh root@0.0.0.0`` using the ipv4 address of your droplet instead of 0.0.0.0)
 - ```mkdir Discord```
 - ```cd Discord```
 - ```git clone ....```
