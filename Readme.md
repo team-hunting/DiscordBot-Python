@@ -1,15 +1,36 @@
-git clone https://github.com/team-hunting/DiscordBot-Python-Test.git
+## To run locally
 
-cd into directory
+- ```git clone ....```
+- cd into directory
+- python -m venv venv
+- activate virtual environment ```.\venv\Scripts\activate```  (windows)
+- pip install -r requirements.txt
+- create .env file with contents: ```TOKEN = 'XXXXXXXXXXX'``` using your actual token from discord
+- run with ```python bot.py```
 
-python -m venv venv
+## To run with docker-compose locally
 
-.\venv\Scripts\activate  (windows)
+- ```git clone ....```
+- cd into directory
+- modify Dockerfile: ```TOKEN = 'XXXXXXXXXXX'``` using your actual token from discord
+- ```docker-compose build```
+- ```docker-compose up -d```
 
-pip install -r requirements.txt
+## To run on DigitalOcean using docker-compose
 
-create .env file with contents: TOKEN = 'XXXXXXXXXXX'
-
-Use your real token instead of XXXXXX
-
-run with ```python bot.py```
+- Spin up a droplet
+- Go to 'Networking' and set up a firewall
+- - Inbound Rules: ALL TCP, ALL UDP
+- Attach firewall to your droplet
+- SSH into droplet, or use 'Droplet Terminal' via UI
+- ```mkdir Discord```
+- ```cd Discord```
+- ```git clone ....```
+- cd into newly created repository
+- ```nano Dockerfile```
+- Add your TOKEN (and uncomment ENV line):
+- - ```ENV TOKEN=MT.....................k8O4``` (no quotation marks)
+- Install docker on droplet: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04
+- Install docker compose ```apt install docker-compose```
+- ```docker-compose build```
+- ```docker-compose up -d```
