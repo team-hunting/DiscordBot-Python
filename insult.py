@@ -1,3 +1,6 @@
+# Please note that I just stole this set of words from https://rusttips.com/insult-generator/
+# As a result, please do not hold me accountable for the non PC nature of the insults. Feel free to modify them at will.
+
 insults = {
 
 'adjectives':[
