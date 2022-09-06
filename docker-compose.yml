@@ -4,4 +4,5 @@ services:
     build:
       context: .
     container_name: botpy
+    restart: unless-stopped
     image: python:3.9.2
